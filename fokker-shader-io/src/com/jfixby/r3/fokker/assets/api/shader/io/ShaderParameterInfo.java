@@ -11,10 +11,12 @@ public class ShaderParameterInfo implements Serializable {
 
 	public String name;
 	public String type;
+	public Object defaultValue;
 
-	public ShaderParameterInfo (final String name, final String type) {
+	public ShaderParameterInfo (final String name, final String type, final Object defaultValue) {
 		this.name = name;
 		this.type = type;
+		this.defaultValue = defaultValue;
 	}
 
 	public ShaderParameterInfo () {
